@@ -1,0 +1,13 @@
+/* Featured Project */
+
+.featured-project img {
+  margin-top: 20px; /* To match bootstrap header margins */
+}
+
+.categories h3 {
+  color: #399bd1;
+}
+
+.categories ul {
+  color: rgba(0, 0, 0, 0.7);
+}
