@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-/* Universal Styles */
-
 html {
 	font-size: 14px;
 }
@@ -41,24 +39,4 @@ img {
   border: 0;
   margin-top: 2.8rem;
   background-color: #399bd1;
-}
-
-/* Help */
-
-.help {
-  padding: 5.2rem 0;
-  background-color: #f3f3f3;
-  text-align: center;
-}
-
-.help strong {
-  display: inline-block;
-  margin-bottom: 1.4rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.help p {
-  max-width: 42rem;
-  margin: auto;
 }
