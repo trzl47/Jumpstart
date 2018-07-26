@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
 /* Universal Styles */
 
 html {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 body {
@@ -51,7 +54,7 @@ img {
 
 .jumbotron {
   padding: 11.85rem 0;
-  background-image: url("../src/assets/jumbotron.png");
+  background-image: url("../img/jumbotron.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,0 +1,30 @@
+version: '3'
+services:
+  react-nginx:
+    image: trzl/portfolio:jumpstart-react.1
+    restart: unless-stopped
+    container_name: jumpstart-nginx
+    networks:
+      - jumpstart
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+  reverseproxy:
+    image: trzl/portfolio:jumpstart-proxy.1
+    container_name: jumpstart-proxy
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    depends_on:
+      - react-nginx
+   environment:
+      VIRTUAL_HOST: jumpstartg.tbrownkcdev.com
+      LETSENCRYPT_HOST: jumpstartg.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy
+  jumpstart:
+    driver: bridge
