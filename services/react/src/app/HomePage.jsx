@@ -1,22 +1,14 @@
 // libs
 import React from 'react';
 // components
+import Header from './components/Header.jsx';
 // styles
 // import '../css/homepage.css';
 
 const HomePage = () => {
 	return (
 		<section className='homepage'>
-		<nav className='navbar navbar-default navbar-fixed-top'>
-			<div className='container-fluid'>
-				<ul className='nav navbar-nav'>
-					<li className='active'><a href='/#'>Explore</a></li>
-					<li><a href='/#'>Start a project</a></li>
-					<li><a href='/#'>About us</a></li>
-				</ul>
-				<img className='navbar-brand navbar-right collapse navbar-collapse' src={require('../img/logo-jumpstart.png')} />
-			</div>
-		</nav>
+			<Header />
 
 		<div className='jumbotron'>
 			<div className='container-fluid'>
