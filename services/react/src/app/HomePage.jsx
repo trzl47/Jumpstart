@@ -2,6 +2,7 @@
 import React from 'react';
 // components
 import Header from './components/Header.jsx';
+import Jumbotron from './components/Jumbotron.jsx';
 // styles
 // import '../css/homepage.css';
 
@@ -9,14 +10,8 @@ const HomePage = () => {
 	return (
 		<section className='homepage'>
 			<Header />
+			<Jumbotron />
 
-		<div className='jumbotron'>
-			<div className='container-fluid'>
-				<h1>GET GOING.</h1>
-				<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-				<a href='/#' className='btn btn-primary btn-lg'>Jump in</a>
-			</div>
-		</div>
 
 		<div className='container featured-project'>
 			<div className='row'>

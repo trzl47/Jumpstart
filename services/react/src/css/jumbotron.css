@@ -1,0 +1,30 @@
+.jumbotron {
+  padding: 11.85rem 0;
+  background-image: url("../img/jumbotron.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 3.64rem; /* To offset fixed header. */
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 7.1rem;
+  color: white;
+}
+
+.jumbotron p {
+  max-width: 51.3rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+    margin-top: 9.7rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}

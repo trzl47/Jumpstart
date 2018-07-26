@@ -1,7 +1,7 @@
 // libs
 import React from 'react';
 // styles
-// import '../css/homepage.css';
+import '../../css/header.css';
 
 const Header = () => {
 	return (
