@@ -1,3 +1,31 @@
-.project {
-  margin-bottom: 5.85rem;
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media only screen and (min-width: 767px) {
+	.projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			'proj-header proj-header proj-header'
+			'project1 project2 project3';
+		grid-gap: 2rem;;
+		padding: 2rem;
+	}
+}
+
+.project1 {
+	grid-area: project1;
+}
+.project2 {
+	grid-area: project2;
+}
+.project3 {
+	grid-area: project3;
+}
+
+.project-img {
+	width: 100%;
 }
