@@ -1,0 +1,23 @@
+version: '3'
+services:
+  jump-nginx:
+    image: trzl/portfolio:jump-react.1
+    container_name: jump-nginx
+    restart: unless-stopped
+  reverseproxy:
+    image: trzl/portfolio:jump-proxy.1
+    container_name: jump-proxy
+    restart: unless-stopped
+    expose:
+      - "80"
+      - "443"
+    depends_on:
+      - jump-nginx
+    environment:
+      VIRTUAL_HOST: jumpstart.tbrownkcdev.com
+      LETSENCRYPT_HOST: jumpstart.tbrownkcdev.com
+      LETSENCRYPT_EMAIL: brownty47@gmail.com
+networks:
+  default:
+    external:
+      name: webproxy
